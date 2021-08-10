@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(0, 192, 182), rgb(98, 0, 128));
+  display: flex;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Sriracha", cursive;
+  color: white;
+  h1 {
+    margin: 2rem 0;
+  }
+  form {
+    input,
+    button {
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+    }
+    input[type="number"] {
+      width: 80px;
+    }
+  }
+}
