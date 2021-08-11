@@ -1,20 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+i {
+  pointer-events: none;
+}
+
 body {
-  background: linear-gradient(90deg, rgb(0, 192, 182), rgb(98, 0, 128));
+  background-image: url("../pexels-longxiang-qian-1710489.jpg");
+  background-size: cover;
   display: flex;
   font-size: 3rem;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Sriracha", cursive;
-  color: white;
+  font-family: "Rubik", sans-serif;
+  color: black;
   h1 {
     margin: 2rem 0;
   }
@@ -23,9 +27,48 @@ body {
     button {
       font-size: 1.5rem;
       padding: 0.5rem 1rem;
+      border-radius: 25px;
     }
     input[type="number"] {
       width: 80px;
     }
+    button {
+      background-color: #005de9;
+    }
   }
+  section div {
+    display: flex;
+
+    margin: 1rem 0;
+    p {
+      margin: 0 1rem;
+      border-radius: 25px;
+      background-color: white;
+      font-size: 3rem;
+      padding: 0.5rem 1rem;
+    }
+    button {
+      font-size: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 25rem;
+      margin: 0 0.5rem;
+    }
+  }
+  section {
+    margin: 2rem 0;
+  }
+}
+
+.trash {
+  background-color: red;
+}
+
+.check {
+  background-color: green;
+}
+
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
 }

@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your todolist</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <h1>My To Do List</h1>
@@ -15,11 +21,29 @@
         name="text"
         id="text"
         placeholder="What you wanna do today?"
+        value="learnJS"
       />
-      <input type="number" name="month" id="month" placeholder="M" />
-      <input type="number" name="day" id="day" placeholder="D" />
+      <input
+        type="number"
+        name="month"
+        id="month"
+        placeholder="M"
+        max="12"
+        min="1"
+        value="1"
+      />
+      <input
+        type="number"
+        name="day"
+        id="day"
+        placeholder="D"
+        max="31"
+        min="1"
+        value="18"
+      />
       <button>Add</button>
     </form>
+    <section></section>
   </body>
   <script src="./app.js"></script>
 </html>
